@@ -36,8 +36,10 @@ class _HeightScreenState extends State<HeightScreen> {
           children: [
             TextField(
               controller: _heightController,
-              decoration: const InputDecoration(labelText: 'Height in (cm)'),
+              decoration:const InputDecoration(labelText: 'Height in (kg)'),
+              keyboardType: TextInputType.number,
             ),
+            const SizedBox(height: 20),
             ElevatedButton(
               style: ButtonStyle(
                 backgroundColor: WidgetStateProperty.all<Color>(const Color.fromARGB(255, 250, 195, 159)),
@@ -52,7 +54,7 @@ class _HeightScreenState extends State<HeightScreen> {
                   );
                 }
               },
-              child: const Text('Save Height and Calculate BMI'),
+              child: const SizedBox(height: 20, child: Text('Save Height and Calculate BMI')),
             ),
           ],
         ),

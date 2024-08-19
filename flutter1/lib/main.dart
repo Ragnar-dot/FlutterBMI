@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       home: const HomeScreen(),
       routes: { 
         '/weight': (context) => WeightScreen(),
-        '/height': (context) => const HeightScreen(),
+        '/height': (context) => HeightScreen(),
         '/result': (context) => ResultScreen(),
         //When the application navigates to the route named '/height', the HeightScreen widget will be displayed
 
